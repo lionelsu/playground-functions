@@ -103,7 +103,25 @@ function fizzBuzz(array) {
   return fizzBuzzNoArray;
 }
 // Desafio 9 - Crie a função encode e a função decode
+function encode(palavra) {
+  const palavraCodificada = palavra
+    .replaceAll('a', '1')
+    .replaceAll('e', '2')
+    .replaceAll('i', '3')
+    .replaceAll('o', '4')
+    .replaceAll('u', '5');
+  return palavraCodificada;
+}
 
+function decode(palavra) {
+  const palavraDecodificada = palavra
+    .replaceAll('1', 'a')
+    .replaceAll('2', 'e')
+    .replaceAll('3', 'i')
+    .replaceAll('4', 'o')
+    .replaceAll('5', 'u');
+  return palavraDecodificada;
+}
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
