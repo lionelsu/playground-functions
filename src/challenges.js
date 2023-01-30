@@ -68,7 +68,7 @@ function calcAllAreas(base, height, form) {
     )}`;
   }
 
-  return 'Não foi possível realizar o cálculo, insira uma forma geométrica válida.';
+  return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 }
 // Desafio 7 - Crie a função catAndMouse
 
