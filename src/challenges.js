@@ -12,14 +12,15 @@ function splitSentence(frase) {
 // Desafio 3 - Crie a função concatName
 function concatName(arrayDeString) {
   let palavrasConcatenadas = [];
-  palavrasConcatenadas.push(
-    arrayDeString[arrayDeString.length - 1],
-    arrayDeString[0],
-  );
+  palavrasConcatenadas.push(arrayDeString[arrayDeString.length - 1]);
+  palavrasConcatenadas.push(arrayDeString[0]);
   return palavrasConcatenadas.join(', ');
 }
 // Desafio 4 - Crie a função footballPoints
-
+function footballPoints(wins, ties) {
+  const pontuacao = wins * 3 + ties * 1;
+  return pontuacao;
+}
 // Desafio 5 - Crie a função highestCount
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
