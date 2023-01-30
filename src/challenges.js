@@ -22,6 +22,26 @@ function footballPoints(wins, ties) {
   return pontuacao;
 }
 // Desafio 5 - Crie a função highestCount
+function ohMaiorNumero(array) {
+  let ohMaior = array[0];
+  for (let n of array) {
+    if (n > ohMaior) {
+      ohMaior = n;
+    }
+  }
+  return ohMaior;
+}
+
+function highestCount(array) {
+  let contador = 0;
+  const ohMaior = ohMaiorNumero(array);
+  for (let n of array) {
+    if (n === ohMaior) {
+      contador += 1;
+    }
+  }
+  return contador;
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
