@@ -83,7 +83,25 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'os gatos trombam e o rato foge';
 }
 // Desafio 8 - Crie a função fizzBuzz
-
+function teste(n) {
+  if (n % 3 === 0 && n % 5 === 0) {
+    return 'fizzBuzz';
+  }
+  if (n % 3 === 0) {
+    return 'fizz';
+  }
+  if (n % 5 === 0) {
+    return 'buzz';
+  }
+  return 'bug!';
+}
+function fizzBuzz(array) {
+  const fizzBuzzNoArray = [];
+  for (let i = 0; i < array.length; i += 1) {
+    fizzBuzzNoArray[i] = teste(array[i]);
+  }
+  return fizzBuzzNoArray;
+}
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
