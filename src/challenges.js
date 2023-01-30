@@ -33,18 +33,43 @@ function ohMaiorNumero(array) {
 }
 
 function highestCount(array) {
-  let contador = 0;
+  let contadorDoMaior = 0;
   const ohMaior = ohMaiorNumero(array);
   for (let n of array) {
     if (n === ohMaior) {
-      contador += 1;
+      contadorDoMaior += 1;
     }
   }
-  return contador;
+  return contadorDoMaior;
 }
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+function calcTriangleArea(base, height) {
+  const area = (base * height) / 2;
+  return area;
+}
 
+function calcRectangleArea(base, height) {
+  const area = base * height;
+  return area;
+}
+
+function calcAllAreas(base, height, form) {
+  if (form === 'triângulo') {
+    return `O valor da área do triângulo é de: ${calcTriangleArea(
+      base,
+      height,
+    )}`;
+  }
+  if (form === 'retângulo') {
+    return `O valor da área do retângulo é de: ${calcRectangleArea(
+      base,
+      height,
+    )}`;
+  }
+
+  return 'Não foi possível realizar o cálculo, insira uma forma geométrica válida.';
+}
 // Desafio 7 - Crie a função catAndMouse
 
 // Desafio 8 - Crie a função fizzBuzz
