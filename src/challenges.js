@@ -10,7 +10,14 @@ function splitSentence(frase) {
   return frase.split(' ');
 }
 // Desafio 3 - Crie a função concatName
-
+function concatName(arrayDeString) {
+  let palavrasConcatenadas = [];
+  palavrasConcatenadas.push(
+    arrayDeString[arrayDeString.length - 1],
+    arrayDeString[0],
+  );
+  return palavrasConcatenadas.join(', ');
+}
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
