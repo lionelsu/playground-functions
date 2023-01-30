@@ -123,7 +123,21 @@ function decode(palavra) {
   return palavraDecodificada;
 }
 // Desafio 10 - Crie a função techList
-
+function techList(arrayTech, nome) {
+  const minhaTechList = [];
+  if (arrayTech.constructor !== Array) {
+    return minhaTechList;
+  }
+  arrayTech.sort();
+  for (const tech of arrayTech) {
+    const objetoTechList = {
+      tech,
+      name: nome,
+    };
+    minhaTechList.push(objetoTechList);
+  }
+  return minhaTechList;
+}
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea:
