@@ -6,7 +6,9 @@ function compareTrue(param1, param2) {
   return false;
 }
 // Desafio 2 - Crie a função splitSentence
-
+function splitSentence(frase) {
+  return frase.split(' ');
+}
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
