@@ -83,7 +83,7 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'os gatos trombam e o rato foge';
 }
 // Desafio 8 - Crie a função fizzBuzz
-function teste(n) {
+function fizzBuzzBools(n) {
   if (n % 3 === 0 && n % 5 === 0) {
     return 'fizzBuzz';
   }
@@ -98,7 +98,7 @@ function teste(n) {
 function fizzBuzz(array) {
   const fizzBuzzNoArray = [];
   for (let i = 0; i < array.length; i += 1) {
-    fizzBuzzNoArray[i] = teste(array[i]);
+    fizzBuzzNoArray[i] = fizzBuzzBools(array[i]);
   }
   return fizzBuzzNoArray;
 }
