@@ -59,7 +59,20 @@ function triangleCheck(lineA, lineB, lineC) {
   return true;
 }
 // Desafio 13 - Crie a função hydrate
-
+function hydrate(string) {
+  let sum = 0;
+  const getArrNumber = string.match(/\d+/g).map(Number);
+  getArrNumber.forEach((nPosition) => {
+    if (nPosition === 0 || nPosition > 9) {
+      return;
+    }
+    sum += nPosition;
+  });
+  if (sum === 1) {
+    return `${sum} copo de água`;
+  }
+  return `${sum} copos de água`;
+}
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
