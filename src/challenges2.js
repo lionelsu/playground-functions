@@ -43,7 +43,21 @@ function generatePhoneNumber(array) {
   return phoneNumberFormater(array);
 }
 // Desafio 12 -  Crie a função triangleCheck
-
+const check = {
+  sides(lineA, lineB, lineC) {
+    return lineA < lineB + lineC && lineA > Math.abs(lineB - lineC);
+  },
+};
+function triangleCheck(lineA, lineB, lineC) {
+  if (
+    !check.sides(lineA, lineB, lineC)
+    || !check.sides(lineB, lineA, lineC)
+    || !check.sides(lineC, lineA, lineB)
+  ) {
+    return false;
+  }
+  return true;
+}
 // Desafio 13 - Crie a função hydrate
 
 /* eslint no-undef: 0 */
